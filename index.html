@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Preparedness Levels by Date</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wildfire Preparedness Levels in the Pacific Northwest</h1>
+        <p>Data is available from March to December. Please select a date to view the preparedness levels for that day.</p>
+        <div id="controls">
+            <label for="month">Select Month:</label>
+            <select id="month"></select>
+
+            <label for="day">Select Day:</label>
+            <select id="day"></select>
+
+            <button id="showButton">Show Levels</button>
+        </div>
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="chart"></div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
